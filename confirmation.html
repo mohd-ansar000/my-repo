@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="confirm.css" />
+    <title>Confirmation Page</title>
+  </head>
+  <body>
+    <div class="otp-container">
+      <h1>OTP Confirmation</h1>
+      <p id="message"></p>
+      <form id="otp-form">
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" name="otp" maxlength="4" /> <!---text box for otp-->
+        <button id="otp-btn" type="button" onclick="validateOTP()">Validate</button> <!---Button to submit otp-->
+        <p id="otp-error"></p> <!---shows otp error-->
+      </form>
+    </div>
+
+    <script src="confirm.js"></script> <!---JS file for confirmation.html-->
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan Application Form</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Loan Application Form</h1>
+        <form action="confirmation.html" method="get" onsubmit="return validateForm()">
+          <div class="input-group">
+            <label><strong>Full Name:</strong></label>
+            <input type="text" placeholder="Enter Your Full Name" id="fullname" name="fullname">
+            <span id="fullname-error"></span> <!---shows fullname error-->
+          </div>
+
+          <div class="input-group">
+            <label><strong>Email Id:</strong></label>
+            <input type="email" placeholder="Enter Your Email Id" id="email-id" name="email">
+            <span id="email-error"></span> <!---shows email error-->
+          </div>
+
+          <div class="input-group">
+            <label><strong>PAN No.:</strong></label>
+            <input type="text" placeholder="Enter your PAN number" id="pan-no" name="pan">
+            <span id="pan-error"></span> <!---shows PAN error-->
+          </div>
+
+          <div class="input-group">
+            <label><strong>Loan Amount:</strong></label>
+            <input type="text" placeholder="Enter Your Loan Amount" id="amount" name="loan_amount">
+            <span id="amount-error"></span> <!---shows Amount error-->
+          </div>
+          <button type="button" id="emi-btn" onclick="calculateEMI()">Check EMI</button> <!---Button to calculate EMI-->
+          <span id="emi-display"></span> <!---Displays EMI on the screen-->
+          <button type="submit" id="submit-btn">Submit</button> <!---Submit button to submit form data-->
+          <span id="submit-error"></span> <!---shows submit data error-->
+      </form>
+    </div>
+    <script src="script.js"></script> <!----JS file for index.html. i.e Loan Page-->
+
+</body>
+</html>
